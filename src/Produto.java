@@ -1,14 +1,19 @@
 public class Produto {
     private String nome;  // exemplo: Cheedar
     private String tipo;  // exemplo: sanduiche
-    private String tamanho; //
-    private double valor;
+    private String tamanho; // 300ml; 500ml; 700ml
+    private double valor; // R$
 
     public Produto() {
         this.setNome("");
         this.setTipo("");
         this.setTamanho("");
         this.setValor(0.0);
+    }
+
+    public Produto(String nome, String tipo) {
+        this.setNome(nome);
+        this.setTipo(tipo);
     }
 
     public Produto(String nome, String tipo, String tamanho, double valor) {
